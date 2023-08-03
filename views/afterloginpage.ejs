@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIKON</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/afterloginpage.css">
+    <script src="https://kit.fontawesome.com/c3f9c16a46.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!-- Home page html code -->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><u>UNIKON</u></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="#ourservices">SERVICES</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="/profile">PROFILE</a></li>   
+                </ul>
+            </div>
+            <div class="search">
+               
+                   <form action="/searchbycity" method="post">
+                    <input class="srch" type="search" name="city" placeholder="Search city">
+                    <a href="#"><button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color:black;"></i></button></a> 
+                   </form>       
+            </div>
+           
+        </div>
+        <div class="content">
+            <div class="item-container">
+
+                <%
+                var itemsPerPage = 4;
+                const startIndex = (pagenumber - 1) * itemsPerPage;
+                let endIndex = startIndex + itemsPerPage;
+                const itemsToDisplay = itemlist.slice(startIndex, endIndex);
+               %>
+            <% itemsToDisplay.forEach(item => { %>
+                <div class="item1">
+                    <img   src=<%=item?.img%> alt= <%=item?.name_of_item%> >
+                    <div class="item-details">
+                        <h3  ><%= item?.name_of_item %></h3>
+                        <p  >Price: <%= item?.price_of_item.toFixed(2) %></p>
+                        <p >Address: <%= item?.address %></p>
+                         <form action="/productdescription" method="post">
+                            <input type="hidden" name="img" value="<%= item?.img %>" />
+                            <input type="hidden" name="name_of_item" value="<%= item?.name_of_item %>" />
+                            <input type="hidden" name="price_of_item" value="<%= item?.price_of_item %>" />
+                            <input type="hidden" name="address" value="<%= item?.address %>" />
+                            <button type="submit">more details</button>
+                         </form>
+                    </div>
+                 </div>
+            <% }); %>
+            <%if(itemsToDisplay.length!=0){%>
+                <div class="pagination">
+                   <form action="/next" method="post">
+                    <button type="submit">next</button>
+                   </form>
+                </div>
+                <% }%>
+                <%if(itemsToDisplay.length==0){%>
+                    <h1>opps!! NO further data found </h1>
+               <% }%>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- services page code here -->
+   <div id="ourservices">
+    <div class="servicebody">
+    
+        <h1 class="h1class">Our Features & Services.</h1>
+        <div class="container2" >
+            <div class="boximage" style="overflow: auto; background-color: lavenderblush;">
+                <img src="/images/communicationimage.jpg">
+                <h3>Communications</h3>
+                <p>our mission goes beyond just promoting local businesses. We're also committed to promoting sustainable tourism and preserving the unique cultural heritage of our community.</p>
+            </div>
+    
+            <div class="boximage" style="overflow: auto; background-color: lavenderblush;">
+                <img src="/images/inspiredimage.jpg">
+                <h3>Inspired Designs</h3>
+                <p>Our inspiration for creating this website came from our own experiences as both tourists and locals. We've always been drawn to the unique and one-of-a-kind products that can only be found in local shops and markets, and we wanted to create a platform that would make it easier for others to discover these hidden gems.
+                </p>
+            </div>
+            
+            <div class="boximage" style="overflow: auto; background-color: lavenderblush;">
+                <img src="/images/happycustomersimage.jpg">
+                <h3>Happy Customers</h3>
+                <p>At our UNIKON, we're committed to providing our customers with the best possible shopping experience. We take great pride in offering a wide selection of unique and locally sourced products, and we're thrilled to see so many of our customers enjoying their purchases.
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <!-- About html code here -->
+    <div id="aboutus">
+        <div class="full">
+            <div class="background-color">
+                <div class="back1"></div>
+                <div class="back2"></div>
+            </div>
+            <div class="container">
+                <div class="imagecontainer">
+                 <img src="/images/aboutus.jpg" alt="About Us">
+                </div>
+                <div class="textcontainer">
+                  <h1>About Us</h1>
+                  <p>We believe that supporting small businesses and promoting local products is essential for creating a vibrant and sustainable economy. That's why we've created this platform for local shop owners and artisans to showcase their products to a wider audience.</p>
+                      <a href="/readmore">Read More</a>
+                    </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- Contact html code here -->
+    <div id="contactus">
+        <div class="container1">
+            <h1 style="color: rgb(247, 245, 245);"><b> CONTACT US </b></h1>
+            <p style="color: rgb(247, 245, 245);">We'd love to hear from you! If you have any questions, feedback, or just want to say hello, please don't hesitate to get in touch with us.</p>
+            <p style="color: rgb(247, 245, 245);">You can reach us by email , and we'll do our best to get back to you within 24 hours. Alternatively, you can fill out the contact form below, and we'll get back to you as soon as possible.</p>
+                <div class="contactbox">
+                    <div class="contactleft">
+                        <h3>Send your request</h3>
+                        <form action="/contact" method="post">
+                        <div class="inputrow">
+                            <div class="inputgroup">
+                                <label >Name</label>
+                                <input type="text" placeholder="your name here">
+                            </div>
+                            <div class="inputgroup">
+                                <label >Phone</label>
+                                <input type="number" placeholder="+91....">
+                            </div>
+                        </div>
+                        <div class="inputrow">
+                            <div class="inputgroup">
+                                <label >Email</label>
+                                <input type="email" placeholder="abc@gmailcom">
+                            </div>
+                            <div class="inputgroup">
+                                <label >Subject</label>
+                                <input type="text" placeholder="subject??">
+                            </div>
+                        </div>
+                        <label >Message</label>
+                        <textarea rows="5" placeholder="Your Feedback/Any Queries"></textarea>
+                        
+                        <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contactright">
+                       <h3>Reach us</h3>
+                       <table>
+                        <tr>
+                            <td>Email  :</td>
+                            <td>sumitmandloi3@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Phone:</td>
+                            <td>7746053443</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Address:</td>
+                            <td>NIT Jamshedpurbhdfvhksdjbcjsjvjhvb<br>bgdduhwehdvbdjdcvbskjdhvcwhbjwb<br>sdbcjhsdbcjhsbc</td>
+                        </tr>
+                       </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>

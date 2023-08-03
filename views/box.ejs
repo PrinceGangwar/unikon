@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/c3f9c16a46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="logup">
+        <div class="logbox">
+           <div class="btnbox">
+            <div id="btn"></div>
+              <button type="button" class="switchbutton" onclick="login()">Log In</button>
+              <button type="button" class="switchbutton" onclick="signup()">Sign Up</button>
+           </div>
+           <div class="icons">
+            <img src="/images/google.png">
+            <img src="/images/phone.png">
+        </div>
+
+        <form class="fill" id="login" action="/login" method="post">
+            <input type="text"name="uname" class="fill-field" placeholder="User Id" required>
+            <input type="text"name="psw" class="fill-field" placeholder="Enter password" required><br>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submitbtn">Log in</button><br>
+             <div id="result"> <%=message%> </div>
+        </form>
+        
+        <form class="fill" id="signup" action="/signup" method="post">
+            <input type="text" class="fill-field" placeholder="User Id" name="username" required>
+            <input type="email" class="fill-field" placeholder="Email Id" name="email" required>
+            <input type="text" class="fill-field" placeholder="Enter password" name="password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submitbtn">Sign Up</button>
+            
+        </form>
+        </div>
+       
+    </div>
+
+
+
+
+    <script>
+   var x=document.getElementById("login");
+   var y=document.getElementById("signup");
+   var z=document.getElementById("btn");
+   function signup(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="110px";
+   }
+   function login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0px";
+   }
+
+
+    </script>
+</body>
+</html>

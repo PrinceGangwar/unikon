@@ -1,0 +1,123 @@
+/* 
+*{
+    margin: 0;
+    padding: 0;    
+} */
+body{
+   
+    font-size: 14px;
+    
+}
+
+#contactus
+{
+    display: absolute;
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0,0,0,0.5)50%), url(/images/wallpaperflare.com_wallpaper\ \(26\).jpg);
+
+    margin-bottom: 0px;
+}
+
+.container1{
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    
+}
+.contactbox{
+    background: white;
+    display: flex;
+    margin-top: 27px;
+    background: rgba(255,255,255,0.017);
+}
+.contactleft{
+    flex-basis: 60%;
+    padding: 10px 60px;
+}
+.contactright{
+    flex-basis: 60%;
+    padding: 10px 40px;
+    background: transparent;
+    color: white;
+    font-size: x-large;
+}
+h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:black;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.inputrow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+    height:30px;
+    color: black;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+textarea{
+    width: 100%;
+    border: 1.5px solid rgb(14, 14, 14);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(255,255,255,0.445);
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    color: rgb(239, 239, 244);
+}
+button{
+    background:rgba(123,255,0,0.212);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgb(49, 47, 47);
+
+}
+.contactleft h3{
+    color: rgb(252, 244, 244);
+    margin-bottom: 30px;
+    font-weight: 600;
+
+}
+.contactright h3{
+    
+    margin-bottom: 30px;
+
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 30px;
+}
+table{
+    padding-top: 30px;
+}
+button:hover{
+    background-color: rgb(255, 9, 9);
+    color: white;
+    border: 2px solid black;
+}

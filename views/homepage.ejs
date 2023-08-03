@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIKON</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <script src="https://kit.fontawesome.com/c3f9c16a46.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!-- Home page html code -->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><u>UNIKON</u></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="#ourservices">SERVICES</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="/login">LOGIN/SIGNUP</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search city">
+                  <a href="#"><button class="btn"><i class="fa-solid fa-magnifying-glass" style="color:black;"></i></button></a>
+            </div>
+           
+        </div>
+        <div class="content">
+            <h1>Things which<br> make you <br><span>Smile.</span><i class="fa-regular fa-face-smile" style="color:#fbe604;"></i></h1>
+          <p class="par">Let us enjoy the <br>unique things and decorate<br> your home with it..!!</p>
+          <!-- <button class="cn"><a href="#">JOIN US</a></button> -->
+         
+        </div>
+    </div>
+
+    <!-- services page code here -->
+   <div id="ourservices">
+    <div class="servicebody">
+    
+        <h1 class="h1class">Our Features & Services.</h1>
+        <div class="container2">
+            <div class="boximage" style="overflow: auto; background-color: lavenderblush;">
+                <img src="/images/communicationimage.jpg">
+                <h3>Communications</h3>
+                <b><p style="overflow: auto;">our mission goes beyond just promoting local businesses. We're also committed to promoting sustainable tourism and preserving the unique cultural heritage of our community. By highlighting the best of what our community has to offer, we hope to inspire others to visit and support our local businesses, and to help build a more sustainable and resilient economy for years to come. </p></b>
+            </div>
+    
+            <div class="boximage"style="overflow: auto;background-color: lavenderblush;">
+                <img src="/images/inspiredimage.jpg">
+                <h3>Inspired Designs</h3>
+                <b><p style="overflow: auto;">Our inspiration for creating this website came from our own experiences as both tourists and locals. We've always been drawn to the unique and one-of-a-kind products that can only be found in local shops and markets, and we wanted to create a platform that would make it easier for others to discover these hidden gems.
+                    <br>
+                     We also saw a need for a platform that would empower local artisans and entrepreneurs to showcase their products to a wider audience. As small business owners ourselves, we know firsthand how challenging it can be to compete with larger retailers and to reach new customers. That's why we created UNIKON, to give local businesses a platform to showcase their products and connect with customers from all over the world.
+                    </p></b>
+            </div>
+            
+            <div class="boximage"style="overflow: auto;background-color: lavenderblush;">
+                <img src="/images/happycustomersimage.jpg">
+                <h3>Happy Customers</h3>
+                <b><p style="overflow: auto;">At our UNIKON, we're committed to providing our customers with the best possible shopping experience. We take great pride in offering a wide selection of unique and locally sourced products, and we're thrilled to see so many of our customers enjoying their purchases.
+
+                </p></b>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <!-- About html code here -->
+    <div id="aboutus">
+        <div class="full">
+            <div class="background-color">
+                <div class="back1"></div>
+                <div class="back2"></div>
+            </div>
+            <div class="container">
+                <div class="imagecontainer">
+                 <img src="/images/aboutus.jpg" alt="About Us">
+                </div>
+                <div class="textcontainer">
+                  <h1>About Us</h1>
+                  <p>We believe that supporting small businesses and promoting local products is essential for creating a vibrant and sustainable economy. That's why we've created this platform for local shop owners and artisans to showcase their products to a wider audience.</p>
+                  <a href="/readmore">Read More</a>
+                    </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- Contact html code here -->
+    <div id="contactus">
+        <div class="container1">
+            <h1 style="color: rgb(247, 245, 245);"><b>CONTACT US</b></h1>
+            <p style="color:rgb(249, 244, 244)">We'd love to hear from you! If you have any questions, feedback, or just want to say hello, please don't hesitate to get in touch with us.</p>
+            <p style="color: rgb(248, 244, 244);">You can reach us by email , and we'll do our best to get back to you within 24 hours. Alternatively, you can fill out the contact form below, and we'll get back to you as soon as possible.</p>
+              
+                <div class="contactbox">
+                    <div class="contactleft">
+                        <h3>Send your request</h3>
+                        <form action="/contact" method="post">
+                        <div class="inputrow">
+                            <div class="inputgroup">
+                                <label >Name</label>
+                                <input type="text" placeholder="your name here" name="name">
+                            </div>
+                            <div class="inputgroup">
+                                <label >Phone</label>
+                                <input type="text" name="phonenumber" placeholder="+91....">
+                            </div>
+                        </div>
+                        <div class="inputrow">
+                            <div class="inputgroup">
+                                <label >Email</label>
+                                <input type="email" name="email" placeholder="abc@gmailcom">
+                            </div>
+                            <div class="inputgroup">
+                                <label >Subject</label>
+                                <input type="text" name="subject" placeholder="subject??">
+                            </div>
+                        </div>
+                        <label >Message</label>
+                        <textarea rows="5"  name="messages" placeholder="Your Feedback/Any Queries"></textarea>
+                        
+                        <button type="submit">Send</button>
+                        <div class="mess"><%=message %></div>
+                        </form>
+                    </div>
+                    <div class="contactright">
+                       <h3>Reach us</h3>
+                       <table>
+                        <tr>
+                            <td>Email  :</td>
+                            <td>sumitmandloi3@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>7746053443</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>hostel b <br>NIT jamshedpur<br>pincode:346726</td>
+                        </tr>
+                       </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>

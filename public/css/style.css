@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom right, rgb(176, 220, 233), rgb(223, 185, 227));
+}
+
+.about{
+  width: 100%;
+  padding: 78px 0px;
+}
+.about img{
+  height: 500px;
+  width: 420px;
+  border-radius: 20px;
+}
+.about-text{
+  width: 550px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgb(225, 147, 225);
+  font-family: 'Courier New', Courier, monospace;
+  font-style:oblique;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h1{
+  color: rgb(82, 7, 88);
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight:bolder;
+  font-family: Courier, Helvetica, sans-serif;
+  border-bottom: solid 2px white;
+
+}
+.checked{
+  color: yellow;
+}
+img{
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgb(45, 159, 197);
+}

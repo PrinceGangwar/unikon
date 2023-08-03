@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Description</title>
+    <link rel="stylesheet" href="/css/newstyle.css">
+  </head>
+  <body>
+    <div class="container3">
+      <h2 class="form">Description</h2>
+      <form action="/profile/itemdetails" method="post" enctype="multipart/form-data">
+        <div class="user-info">
+          <div class="user-input-box">
+            <label for="itemname"><b>Name of Item</b></label>
+            <input type="text" id="itemname" name="itemname" placeholder="Enter Item Name">
+          </div>
+          <div class="user-input-box">
+            <label for="itemname"><b>price</b></label>
+            <input type="text" id="itemname" name="price" placeholder="Enter price">
+          </div>
+          <div class="user-input-box">
+            <label for="category"><b>Category of Item</b></label>
+            <input type="text" id="category" name="category" placeholder="Enter Category of Item">
+          </div>
+          <div class="user-input-box">
+            <label for="location"><b>Contact Number</b></label>
+            <input type="text" id="location" name="contact" placeholder="Enter phone number">
+          </div>
+          <div class="user-input-box">
+            <label for="image"><b>Upload Item Image</b></label>
+              <input type="file" enctype="multipart/form-data" id="image" name="img" accept="image/*">
+          </div>
+          <div class="user-input-box">
+            <label for="desc"><b>Description</b></label>
+            <input type="text" id="desc" name="desc" placeholder="Enter Description of the item">
+          </div>
+          <div class="user-input-box">
+            <label for="seller"><b>Seller Name</b></label>
+            <input type="text" id="seller" name="seller" placeholder="Enter Seller Name">
+          </div>
+          <div class="user-input-box">
+            <label for="address"><b>Address</b></label>
+            <input type="text" id="address" name="address" placeholder="Enter Address">
+          </div>
+          <div class="user-input-box">
+            <label for="city"><b>Enter City</b></label>
+            <input type="text" id="city" name="city" placeholder="Enter City">
+          </div>
+          <div class="user-input-box">
+            <label for="pin"><b>Pin-Code</b></label>
+            <input type="number" id="pin" name="pin" placeholder="Enter Pin-Code">
+          </div>
+          <div class="user-input-box">
+            <label for="state"><b>State</b></label>
+            <input type="text" id="state" name="state" placeholder="Enter State">
+          </div>
+          </div>
+          <div class="form-submit">
+            <input type="submit" id="submit" >
+          </div>
+        </div>
+      </form>
+      <div><%=message%></div>
+    </div>
+  </body>
+</html>

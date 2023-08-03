@@ -1,0 +1,62 @@
+
+body{
+    background-image: url("/images/background_img.jpg");
+}
+.heading-div{
+    background-color: rgb(237, 229, 237);
+    height:100px ;
+    margin-left:500px;
+    text-align:justify;
+    margin-top: 80px;
+    margin-right:500px;
+    border-radius: 15px;
+    border-color: rgb(12, 12, 12);
+    border-style: solid;
+    width: 400px;
+}
+form{
+    
+    margin: 50px;
+    margin-right:300px;
+    margin-left:300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+input{
+    height: 25px;
+    border-radius: 5px;
+    border-color: brown;
+}
+.heading{
+    color: rgb(12, 13, 12);
+    font-size: x-large;
+    text-align: center;
+}
+label{
+    font-size: 30px;
+}
+
+button{
+    
+    background-color:brown;
+    /* border-radius: 5px;
+    border-color: rgb(4, 61, 68);
+    border-style: solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 500px; */
+}
+.box{
+    background-color: rgb(237, 229, 237);
+    margin: 50px;
+    padding: 60px;
+    border-radius: 15px;
+    border-color: rgb(4, 61, 68);
+    border-style: solid;
+    width: 600px;
+    
+}

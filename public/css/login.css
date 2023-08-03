@@ -1,0 +1,119 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.logup{
+  
+      width: 100%;
+      background:  url(/images/backgroundimage2.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 120vh;
+      position: absolute;
+}
+.logbox{
+  width: 400px;
+  height: 500px;
+  position: relative;
+  margin: 6% auto;
+  background: rgba(255, 255, 255, 0.701);
+  padding: 5px;
+  overflow: hidden;
+}
+.btnbox{
+  width:220px;
+  margin: 35px auto;
+  position:relative;
+  box-shadow: 0 0 22px 10px rgba(0, 0, 0, 0.735);
+  border-radius: 30px;
+}
+.switchbutton{
+  padding: 10px 30px;
+  cursor:pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position:relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background:linear-gradient(to right,#ff2c10b3,rgb(236, 236, 8));
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.icons{
+  margin:30px auto;
+  text-align: center;
+}
+.icons img{
+  width: 30px;
+  margin: 0 20px;
+  box-shadow: 0 0 20px 0 red;
+  cursor: pointer;
+}
+.fill{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+  
+}
+.fill-field{
+
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0;
+border-right: 0;
+border-top: 0;
+border-bottom:1.5px solid rgb(0, 9, 128) ;
+outline:none;
+background: transparent;
+}
+.submitbtn{
+  width: 80%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background:linear-gradient(to right,#ff2c10b3,rgb(236, 236, 8)); 
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box{
+  margin: 40px 5px 35px 0px;
+}
+span{
+  color: blue;
+  font-size: 15px;
+  bottom: 68px;
+  
+}
+#login{
+  left: 50px;
+}
+#signup{
+  left: 450px;
+}
+
+#result{
+  color: red;
+  font-weight: 400px;
+}
+
+
+
+
+
+
+
+
+
+

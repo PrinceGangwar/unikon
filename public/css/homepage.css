@@ -1,0 +1,153 @@
+*{
+    margin:0%;
+    padding:0%; 
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0,0,0,0.5)50%), url(/images/wallpaperflare.com_wallpaper\ \(23\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    margin-top: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+}
+
+.icon{
+    width: 400px;
+    float: left;
+    height: 75px;
+}
+.logo{
+    color: rgb(255, 241, 47);
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 0 px;
+    /* float: left; */
+    padding-top: 15px;
+    padding-left: 30px;
+    font-weight: bold;
+    
+
+}
+.menu{
+    width: 134px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 27px;
+    font-size: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4 ease-in-out;
+}
+
+ul li a:hover{
+    color:rgb(255, 0, 0);
+    
+
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 435px;
+
+
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid red;
+    margin: 13px;
+    color: white;
+    /* border-right: none; */
+    font-size: 16px;
+    float: left;
+    padding: 7px;
+   border-radius: 10px;
+    margin-right: 1.5px;
+}
+.btn{
+    width: 70px;
+    height: 40px;
+    background: red;
+    border: 2px solid red;
+    margin-top: 13px;
+    color: white;
+    font-size: 20px;
+
+    
+    
+}
+.btn:focus{
+    outline: none;
+
+}
+.srch:focus{
+    outline: rgba(255, 0, 0, 0.244);
+}
+.content{
+    width: 1000px;
+    height: auto;
+    margin-left: 300px;
+    margin-top: 120px;
+    color: whitesmoke;
+    /* position: relative; */
+    float: left;
+
+}
+.content p{
+    padding-left: 0px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 2 px;
+    font-weight: bold;
+    /* line-height: px; */
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 0px;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+
+.content span{
+    color: red;
+    font-size: 60px;
+}
+.mess{
+    color: red;
+    font-size: x-large;
+}
+

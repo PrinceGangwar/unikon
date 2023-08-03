@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="icon" href="logo.jpg" sizes="16x16 32x32" >
+    <link rel="stylesheet" href="css/editProfile.css">
+</head>
+<body>
+    
+
+        <div class="rightbox">
+            <h2 style="color: rgba(165, 5, 13, 0.87); text-align: center;">Edit Profile</h2> 
+            <hr><br><br>
+            
+                <form action="/profile" method="post">
+                    <center>
+                    <label for=""> Name:</label>
+                    <input style="margin-left: 40px;" type="text" placeholder="Update Name" name="name">
+                    <br><br><br>
+                    <label for=""> Email: </label>
+                    <input style="margin-left: 40px;" type="email" placeholder="Update Email" name="email">
+                    <br><br><br>
+                    
+                    <label for=""> Phone: </label>
+                    <input style="margin-left: 40px;" type="text" placeholder="Update Phone No." name="phoneno">
+                    <br><br><br>
+        
+                    <label  for="">Password:</label>
+                    <input style="margin-left: 40px;" type="text" placeholder="Update Password" name="password">
+                  </center>
+        
+                    <center>
+                        <button type="submit">Update</button>
+                        <div class="result"><%=message%></div>
+                    </center>
+                </form>
+              
+               <form action="/profile/itemdetails" method="get">
+                <button type="submit">add item details</button>
+               </form>
+            
+        </div>
+
+            
+            
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+   url('images/img-8.jpg');
+  background-size: cover;
+}
+.container3{
+  width:100%;
+  max-width: 800px;
+  background: rgba(0,0,0,0.4);
+  padding: 28px;
+  margin: 0 28px;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px skyblue;
+  transition: .4s;
+}
+.container3:hover{
+  background: white;
+  opacity: 0.8;
+  color: black;
+}
+.form{
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: black;
+  /* text-shadow: 2px 2px 2px black; */
+  border-bottom: solid 2px skyblue;
+}
+.user-info{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+  justify-content: end;
+}
+.user-input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.user-input-box label{
+  width: 95%;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+#desc{
+  height: 40px;
+}
+.user-input-box input{
+  height: 20px;
+  width: 70%;
+
+  outline: none;
+  border: none;
+  /* padding: 0 10px; */
+  background: transparent;
+  border-bottom: 1.5px solid green;
+}
+::placeholder {
+  color: blue;
+  opacity: 0.5;
+}
+#category{
+  margin-right: 92px;
+}
+#image{
+  border: 0px solid ;
+  margin-right: 92px;
+  transition: .5s;
+}
+#image:hover{
+  background: skyblue;
+
+}
+#seller{
+  margin-right: 92px;
+}
+#city{
+  margin-right: 92px;
+}
+#state{
+  margin-right: 92px;
+}
+.container3 #submit{
+  align-items: center;
+  width: 30%;
+}
+.form-submit input{
+  display: block;
+  width: 50%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(0,0,0.4);
+  background: rgba(232, 214, 126, 0.72);
+  transition: .5s;
+}
+.form-submit input:hover{
+  background: rgba(217, 9, 23, 0.72);
+  color: rgb(255, 255, 255);
+}

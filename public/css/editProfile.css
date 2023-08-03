@@ -1,0 +1,57 @@
+body{
+    background-image: url('backgroundimage2.jpg');
+    /* width: 100%; */
+    background-position: center;
+    background-size: cover;
+}
+
+.rightbox{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    border: 2px solid rgba(191, 191, 96, 0.386);
+    padding-bottom: 20px;
+}
+label{
+        font-size: 20px;
+        color: whitesmoke;
+}
+
+
+input{
+    font-style: italic;
+    font-size: large;
+    color: whitesmoke;
+    /* margin-left: 30px; */
+    /* padding-left: 10px ; */
+    height: 30px;
+    width: 200px;
+    /* border-color: azure; */
+    background: transparent;
+    border-color: rgba(191, 191, 96, 0.386);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+   
+}
+button{
+    color: brown;
+    background-color: rgb(221, 241, 244);
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 2px 2px grey; */
+    background: transparent;
+}
+
+hr{
+    
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid rgba(191, 191, 96, 0.386);
+}
+.result{
+    color: red;
+    font-size: xx-large;
+}

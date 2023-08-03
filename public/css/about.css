@@ -1,0 +1,127 @@
+
+
+.full{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+}
+
+.background-color{
+    width:100%;
+    min-height: 102vh;
+    /* display: flex; */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0,0,0,0.5)50%), url(/images/wallpaperflare.com_wallpaper\ \(21\).jpg);
+
+}
+.container{
+    width:85%;
+    min-height: 70vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.066);
+    border-radius: 10px;
+    margin-top: 4.7%;
+    margin-left: 1%;
+    box-shadow: 24px 24px 30px  rgba(103, 68, 62, 0.406);
+    padding-top: 30px;
+}
+.imagecontainer img{
+    width: 400px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: 0.4;
+    transition: .5s;
+}
+.imagecontainer img:hover{
+ opacity: 1;
+}
+.imagecontainer{
+    display: flex;
+    flex: 1;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+
+}
+.textcontainer{
+    flex: 1;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.textcontainer h1{
+    font-size: 50px;
+    padding: 10px 0px;
+    color: rgb(241, 241, 0);
+}
+.textcontainer p{
+    font-size: 18px;
+    padding: 10px 0px;
+    color:white;
+    
+}
+.textcontainer a{
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    /* margin: 30px; */
+    background-color: rgb(162, 172, 181);
+    font-size: 18px;
+    border-radius: 5px ;
+    width: 7vw;
+    transition: .2s all ease-in-out;
+    justify-content: center;
+
+}
+.textcontainer a:hover{
+    background-color: rgb(42, 70, 103);
+    color: white;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+/* now the below code is used for rsponsive screen */
+
+/* @media screen and (max-width: 1600px)
+{
+    .full{
+        width: 90%;
+    }
+    .imagecontainer img{
+        width: 400px;
+        height: 250;
+    }
+    .textcontainer h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1100px)
+ {
+    .full{
+        flex-direction:column ;
+    }
+    .textcontainer{
+        align-items: center;
+    }
+}
+@media screen and (max-width:550px)
+ {
+    .imagecontainer img{
+        width: 300px;
+        height:200px ;
+    }
+    .textcontainer p{
+        font-size: 20px;
+    }
+ } */
